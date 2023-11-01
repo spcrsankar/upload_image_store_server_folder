@@ -12,6 +12,7 @@ function App() {
       const formData = new FormData();
       formData.append('file', selectedFile);
 
+      //user upload/userImage or quiz upload/quizImage
       fetch('http://localhost:3001/upload', {
         method: 'POST',
         body: formData,
